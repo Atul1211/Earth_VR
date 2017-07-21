@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+      </head>
+  <body>
+    <a-scene>
+
+<a-sky src="hdsky.jpg" ></a-sky>
+<a-sphere src="moon.jpg" scale= "1.5 1.5 1.5"  position="20 2 -10"><a-animation attribute="rotation" to=" 0 359 0" direction="reverse" dur="90000"
+      repeat="indefinite"></a-sphere>
+  <a-sphere src="earthcld.png"  opacity="0.75" position="0 0 -5" rotation="0 0 0" scale="4.8 4.8 4.9"> <a-animation attribute="rotation" to=" 0 359 0" direction="normal" dur="80000"
+      repeat="indefinite"></a-animation></a-sphere> 
+<a-sphere src="cld.png"  opacity="0.7" position="0 0 -5" rotation="0 0 0" scale="5.15 5.15 5.25"> <a-animation attribute="rotation" to=" 0 359 0" direction="normal" dur="70400"
+      repeat="indefinite"></a-animation></a-sphere>
+<a-sphere src="earth.jpg"  position="0 0 -5" rotation="0 0 0" scale="4.5 4.5 4.6"><a-animation attribute="rotation" to=" 0 359 0" direction="normal" dur="100000" repeat ="indefinite"> </a-animation></a-sphere>
+
+ <a-entity position="3  0 10">
+  <a-camera></a-camera>
+</a-entity>
+</a-scene>
+  </body>
+</html>
